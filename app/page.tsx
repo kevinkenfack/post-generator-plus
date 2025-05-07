@@ -29,6 +29,7 @@ const IMAGE_URLS = {
   img3: "https://kenfack-me.vercel.app/thumbnail/background3.jpeg",
   img4: "https://kenfack-me.vercel.app/thumbnail/background4.jpeg",
   img5: "https://kenfack-me.vercel.app/thumbnail/background5.jpg",
+  img6: "https://kenfack-me.vercel.app/thumbnail/background6.png",
   // Si vous ajoutez img6, img7, etc., ils seront automatiquement pris en compte
 }
 
