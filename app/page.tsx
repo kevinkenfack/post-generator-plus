@@ -159,8 +159,8 @@ export default function ImageGenerator() {
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
 
         // Add a semi-transparent overlay for better text visibility
-        ctx.fillStyle = "rgba(0, 0, 0, 0.3)"
-        ctx.fillRect(0, 0, canvas.width, canvas.height)
+        // ctx.fillStyle = "rgba(0, 0, 0, 0.3)"
+        // ctx.fillRect(0, 0, canvas.width, canvas.height)
 
         // Add text on the image
         addTextToCanvas(ctx, canvas.width, canvas.height)
