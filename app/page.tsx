@@ -20,17 +20,23 @@ const COLOR_BACKGROUNDS = [
   { id: "color4", name: "Rose", color1: "#ec4899", color2: "#9d174d" },
   { id: "color5", name: "Orange", color1: "#f59e0b", color2: "#b45309" },
   { id: "color6", name: "Rouge", color1: "#ef4444", color2: "#991b1b" },
+  // Nouvelles couleurs stylées
+  { id: "color7", name: "Menthe", color1: "#00bc7d", color2: "#007a55" },
+  { id: "color8", name: "Émeraude", color1: "#007a55", color2: "#022c22" },
+  { id: "color9", name: "Gris Foncé", color1: "#71717b", color2: "#09090b" },
+  { id: "color10", name: "Dark Mode", color1: "#09090b", color2: "#000000" },
+  { id: "color11", name: "Menthe Foncée", color1: "#00bc7d", color2: "#022c22" },
+  { id: "color12", name: "Gris Vert", color1: "#71717b", color2: "#007a55" },
 ]
 
-// Définir les URLs des images avec des extensions explicites
+// Définir les URLs des images depuis le répertoire public
 const IMAGE_URLS = {
-  img1: "https://kenfack-me.vercel.app/thumbnail/background1.webp",
-  img2: "https://kenfack-me.vercel.app/thumbnail/background2.webp",
-  img3: "https://kenfack-me.vercel.app/thumbnail/background3.jpeg",
-  img4: "https://kenfack-me.vercel.app/thumbnail/background4.jpeg",
-  img5: "https://kenfack-me.vercel.app/thumbnail/background5.jpg",
-  img6: "https://kenfack-me.vercel.app/thumbnail/background6.png",
-  // Si vous ajoutez img6, img7, etc., ils seront automatiquement pris en compte
+  img1: "/background1.webp",
+  img2: "/background2.webp",
+  img3: "/background3.jpg",
+  img4: "/background4.jpg",
+  img5: "/background6.png",
+  // Si vous ajoutez d'autres images dans le dossier public, ajoutez-les ici
 }
 
 // Couleurs de fallback pour les images non disponibles
@@ -101,8 +107,8 @@ export default function ImageGenerator() {
     setGeneratedImage(null)
 
     // Set standard canvas size for all backgrounds
-    canvas.width = 1200
-    canvas.height = 630
+    canvas.width = 1616
+    canvas.height = 1034
 
     // Handle different background types
     if (background.startsWith("color")) {
