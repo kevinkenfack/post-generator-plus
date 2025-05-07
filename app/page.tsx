@@ -35,7 +35,9 @@ const IMAGE_URLS = {
   img2: "/background2.webp",
   img3: "/background3.jpg",
   img4: "/background4.jpg",
-  img5: "/background6.png",
+  img5: "/background5.png",
+  img6: "/background6.jpg",
+  img7: "/background7.jpg",
   // Si vous ajoutez d'autres images dans le dossier public, ajoutez-les ici
 }
 
