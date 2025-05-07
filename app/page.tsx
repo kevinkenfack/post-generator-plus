@@ -38,6 +38,7 @@ const IMAGE_URLS = {
   img5: "/background5.png",
   img6: "/background6.jpg",
   img7: "/background7.jpg",
+  img8: "/background8.jpg",
   // Si vous ajoutez d'autres images dans le dossier public, ajoutez-les ici
 }
 
@@ -207,7 +208,7 @@ export default function ImageGenerator() {
     // Configure text style
     ctx.fillStyle = "white"
     ctx.strokeStyle = "black"
-    ctx.lineWidth = 4
+    ctx.lineWidth = 0 // Suppression de la bordure noire
     ctx.textAlign = "center"
     ctx.textBaseline = "middle"
 
@@ -245,8 +246,7 @@ export default function ImageGenerator() {
 
     // Draw each line
     lines.forEach((line) => {
-      // Draw text with stroke for better visibility
-      ctx.strokeText(line, width / 2, y)
+      // Draw text without stroke
       ctx.fillText(line, width / 2, y)
       y += lineHeight
     })
