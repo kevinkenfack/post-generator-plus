@@ -39,6 +39,7 @@ const IMAGE_URLS = {
   img6: "/background6.jpg",
   img7: "/background7.jpg",
   img8: "/background8.jpg",
+  img9: "/background9.svg",
   // Si vous ajoutez d'autres images dans le dossier public, ajoutez-les ici
 }
 
